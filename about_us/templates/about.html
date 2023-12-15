@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container py-4">
+    <div id="carouselExampleSlidesOnly" class="py-5 carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="container-fluid py-5" style = "background-image: url({% static 'img1.jpg' %}); background-size: cover; background-repeat: no-repeat;";>
+                <h1 class="display-5 fw-bold text-light ">love bat </h1>
+                <p class="col-md-8 fs-4"></p>
+              </div>
+        </div>
+      </div>
+
+
+
+    <div class="row mb-2">
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0"> Our Culinary Journey:</h3>
+              <p class="card-text mb-auto">Indulge in a symphony of flavors crafted by our passionate chefs who take pride in presenting a menu that combines culinary traditions with modern twists. From sizzling appetizers to delectable main courses, each dish is a masterpiece</p>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <img src="{% static "img3.jpg" %}" height='100%' width='150px' />
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+            <div class="col p-4 d-flex flex-column position-static">
+              <h3 class="mb-0">Fresh and Locally Sourced:</h3>
+              <p class="mb-auto">At [Restaurant Name], we believe in the power of fresh, local ingredients. Our commitment to quality extends from the farm to your table, ensuring that every bite is a celebration of nature's bounty. Join us in supporting local farmers and savor the difference that freshness makes.</p>
+            </div>
+            <div class="col-auto d-none d-lg-block">
+                <img src="{% static "img2.jpg" %}" width='150px' />
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <footer class="pt-3 mt-4 text-body-secondary border-top">
+      © 2024
+    </footer>
+  </div>
+{% endblock content %}

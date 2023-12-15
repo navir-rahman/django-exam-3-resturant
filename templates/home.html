@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container py-4">
+
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
+      <div class="container-fluid py-5">
+        <h1 class="display-5 fw-bold">Love Bat</h1>
+        <p class="col-md-8 fs-4">
+          Welcome to love bat Restaurant, where culinary excellence meets warm hospitality! Step into a world of exquisite flavors and charming ambiance that will tantalize your taste buds and create lasting memories.</p>
+       
+      </div>
+    </div>
+
+    <div class="row mb-2">
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <h3 class="mb-0"> Our Culinary Journey:</h3>
+            <p class="card-text mb-auto">Indulge in a symphony of flavors crafted by our passionate chefs who take pride in presenting a menu that combines culinary traditions with modern twists. From sizzling appetizers to delectable main courses, each dish is a masterpiece</p>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+              <img src="{% static "img3.jpg" %}" height='100%' width='150px' />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+          <div class="col p-4 d-flex flex-column position-static">
+            <p class="mb-auto">At love bat, we believe in the power of fresh, local ingredients. Our commitment to quality extends from the farm to your table, ensuring that every bite is a celebration of nature's bounty. Join us in supporting local farmers and savor the difference that freshness makes.</p>
+          </div>
+          <div class="col-auto d-none d-lg-block">
+              <img src="{% static "img2.jpg" %}" width='150px' />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-dark rounded-3">
+          <h2>🍷 Handpicked Wine Selection:</h2>
+          <p>Complement your meal with a glass of wine from our carefully curated selection. Our sommelier has chosen wines that enhance the flavors of our dishes, ensuring a perfect pairing to elevate your dining experience.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 bg-body-tertiary border rounded-3">
+            <h3 class="mb-0">🥂 Elegant Atmosphere:</h3>
+          <p>Whether you're here for a romantic dinner, a family celebration, or a casual gathering with friends, our inviting atmosphere is the perfect backdrop for every occasion. Enjoy the warm glow of ambient lighting, stylish decor, and the friendly hum of conversation as you dine with us.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="pt-3 mt-4 text-body-secondary border-top">
+      © 2024
+    </footer>
+  </div>
+{% endblock content %}
